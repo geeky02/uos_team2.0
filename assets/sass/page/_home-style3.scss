@@ -1,0 +1,340 @@
+/*--------------------------------------------------------------
+	#home style 3
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#3.1	partners-section
+--------------------------------------------------------------*/
+.partners-section {
+	padding: 25px 0;
+
+	.container {
+		position: relative;
+		padding: 25px 15px;
+	}
+
+	.separator {
+		background: #f4f4f4;
+		width: calc(100% - 30px);
+		height: 1px;
+		position: absolute;
+		left: 15px;
+		bottom: 0;
+	}
+
+	.grid {
+		text-align: center;
+	}
+
+	.grid img {
+		width: auto;
+		margin: 0 auto;
+		display: inline-block;
+	}
+}
+
+
+/*--------------------------------------------------------------
+#3.2	feature-about-section
+--------------------------------------------------------------*/
+.feature-about-section {
+
+	.feature-grid {
+		margin: 0 -15px;
+	}
+
+	.feature-grid .grid {
+		width: calc(50% - 30px);
+		float: left;
+		margin: 0 15px 30px;
+		text-align: center;
+		border-radius: 5px;
+		padding: 50px 25px;
+		box-shadow: 0px 1px 51.3px 5.7px rgba(137, 143, 156, 0.15);
+		@include transition-time(0.3s);
+
+		@include media-query(550px) {
+			width: calc(100% - 30px);
+			float: none;
+		}
+	}
+
+	.feature-grid > .grid:first-child {
+		margin-top: 160px;
+
+		@include media-query(767px) {
+			margin-top: 0;
+		}
+	}
+
+	.feature-grid > .grid:last-child {
+		float: right;
+
+		@include media-query(767px) {
+			float: left;
+		}
+	}
+
+	.icon {
+		background-color: $theme-primary-color;
+		width: 94px;
+		height: 94px;
+		line-height: 94px;
+		margin: 0 auto 25px;
+		border-radius: 50%;
+		position: relative;
+
+		@include media-query(767px) {
+			width: 84px;
+			height: 84px;
+			line-height: 84px;
+		}
+
+		&:before {
+			content: "";
+			background-color: $theme-primary-color;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: -8px;
+			opacity: 0.7;
+			border-radius: 50%;
+		}
+
+		.fi:before {
+			font-size: 45px;
+			font-size: calc-rem-value(45);
+			color: $white;
+			position: relative;
+
+			@include media-query(767px) {
+				font-size: 35px;
+				font-size: calc-rem-value(35);
+			}
+		}
+	}
+
+	h3 {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+		font-weight: 600;
+		color: $text-color;
+		margin: 0;
+
+		@include media-query(767px) {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+		}
+	}
+
+	.feature-grid > .grid:nth-child(2) .icon {
+		background-color: #943bf8;
+
+		&:before {
+			background-color: #943bf8;
+		}
+	}
+
+	.feature-grid > .grid:nth-child(3) .icon {
+		background-color: #42e2b6;
+
+		&:before {
+			background-color: #42e2b6;
+		}
+	}
+
+	.feature-grid > .grid:nth-child(4) .icon {
+		background-color: #f43a46;
+
+		&:before {
+			background-color: #f43a46;
+		}
+	}
+
+	.feature-grid > .grid:hover {
+		box-shadow: 0px 1px 51.3px 5.7px rgba(172, 178, 191, 0.46);
+	}
+
+	.about-area {
+		padding-top: 60px;
+		padding-left: 30px;
+
+		@include media-query(1199px) {
+			padding-top: 35px;
+			padding-left: 0;
+		}
+
+		@include media-query(991px) {
+			padding-top: 30px;
+		}
+
+		p {
+			margin-bottom: 2em;
+		}
+
+		h5 {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-weight: 600;
+			line-height: 1.5em;
+			margin: 0 0 0.5em;
+		}
+
+		ul {
+			list-style: none;
+			font-weight: 600;
+			color: $text-color;
+			overflow: hidden;
+			margin: 35px 0;
+		}
+
+		ul li {
+			float: left;
+			margin-right: 25px;
+		}
+
+		.btns > a:first-child {
+			margin-right: 15px;
+
+			@include media-query(767px) {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+#3.3	cta-s2-section
+--------------------------------------------------------------*/
+.cta-s2-section {
+	@include background-style("../images/cta-s2-bg.jpg", center top, cover, no-repeat, local);
+	position: relative;
+	padding: 100px 0;
+	text-align: center;
+
+	@include media-query(991px) {
+		padding: 100px 0;
+	}
+
+	@include media-query(767px) {
+		padding: 80px 0;
+	}
+
+	&:before {
+		content: "";
+		@include overlay(transparentize($black, 0.40));
+	}
+
+	.fi:before {
+		font-size: 90px;
+		font-size: calc-rem-value(90);
+		color: $white;
+		margin-top: -0.2em;
+		display: block;
+
+		@include media-query(991px) {
+			font-size: 80px;
+			font-size: calc-rem-value(80);
+		}
+
+		@include media-query(767px) {
+			font-size: 60px;
+			font-size: calc-rem-value(60);
+		}
+	}
+
+	h4 {
+		font-size: 38px;
+		font-size: calc-rem-value(38);
+		font-weight: 600;
+		line-height: 1.4em;
+		color: $white;
+		margin: 0.5em 0 0;
+
+		@include media-query(991px) {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+		}
+
+		@include media-query(767px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+#3.4	fun-fact-section
+--------------------------------------------------------------*/
+.fun-fact-section {
+	@include background-style("../images/fun-fact-bg.jpg", center bottom, cover, no-repeat, local);
+	text-align: center;
+
+	@include media-query(767px) {
+		padding-bottom: 30px;
+	}
+
+	h2 {
+		font-size: 30px;
+		font-size: calc-rem-value(30);
+		font-weight: 600;
+		margin: 0 0 1.8em;
+		color: $white;
+
+		@include media-query(991px) {
+			font-size: 26px;
+			font-size: calc-rem-value(26);
+		}
+
+		@include media-query(767px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+		}
+	}
+
+	.fun-fact-grids .grid {
+		width: 25%;
+		float: left;
+
+		@include media-query(767px) {
+			width: 50%;
+			margin-bottom: 50px;
+		}
+	}
+
+	.grid h3 {
+		font-size: 48px;
+		font-size: calc-rem-value(48);
+		font-weight: 300;
+		color: $white;
+		margin: 0 0 0.2em;
+
+		@include media-query(991px) {
+			font-size: 40px;
+			font-size: calc-rem-value(40);
+		}
+
+		@include media-query(767px) {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+		}
+	}
+
+	.grid .odometer-value {
+		color: $white;
+	}
+
+	.grid h3 + p {
+		font-size: 16px;
+		font-size: calc-rem-value(16);
+		color: #d2d2d2;
+		font-style: italic;
+		margin: 0;
+
+		@include media-query(991px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+	}
+}
+

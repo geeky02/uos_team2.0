@@ -1,0 +1,230 @@
+/*--------------------------------------------------------------
+	#service single page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#9.1	service-single-section
+--------------------------------------------------------------*/
+.service-single-section {
+	.service-single-content {
+		@include widther(1200px) {
+			padding-left: 20px;
+		}
+
+		.theme-btn {
+			margin-top: 10px;
+		}
+
+		h2 {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+			font-weight: 600;
+			margin: 0 0 0.7em; 
+			text-transform: capitalize;
+
+			@include media-query(991px) {
+				font-size: 25px;
+				font-size: calc-rem-value(25);
+			}
+
+			@include media-query(767px) {
+				font-size: 22px;
+				font-size: calc-rem-value(22);
+			}
+		}
+
+		h3 {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+			font-weight: 600;
+			text-transform: capitalize;
+			margin: 0 0 1em;
+			
+			@include media-query(991px) {
+				font-size: 22px;
+				font-size: calc-rem-value(22);
+			}
+
+			@include media-query(767px) {
+				font-size: 20px;
+				font-size: calc-rem-value(20);
+			}
+		}
+
+		p {
+			margin-bottom: 1.3em;
+		}
+
+		blockquote {
+			padding: 45px 25px 45px 95px;
+			margin: 55px 0 80px;
+			border: 2px solid #e9f2fb;
+			position: relative;
+			font-style: italic;
+
+			&:before {
+				font-family: "Flaticon";
+				content: "\f106";
+				font-size: 45px;
+				font-size: calc-rem-value(45);
+				color: $theme-primary-color;
+				position: absolute;
+				left: 30px;
+				top: 35px;
+				opacity: 0.5;
+				font-style: normal;
+
+				@include media-query(991px) {
+					display: none;
+				}
+			}
+
+			@include media-query(991px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+				padding: 35px 25px;
+				margin: 45px 0 70px;
+			}
+
+			p {
+				margin-bottom: 0.5em;
+			}
+
+			> span {
+				font-size: 13px;
+				font-size: calc-rem-value(13);
+			}
+		}
+
+		.service-single-img {
+			position: relative;
+			margin-bottom: 60px;
+
+			@include media-query(991px) {
+				margin-bottom: 50px;
+			}
+		}
+
+		.benefit .details {
+			width: calc(100% - 270px);
+			float: left;
+			padding-right: 25px;
+
+			@include media-query(767px) {
+				width: 100%;
+				float: none;
+			}
+		}
+
+		.benefit .img-holder {
+			width: 270px;
+			float: right;
+
+			@include media-query(767px) {
+				width: 100%;
+				float: none;
+				margin: 45px 0;
+			}
+		}
+
+		ul {
+			margin-bottom: 30px;
+			list-style-type: none;
+		}
+
+		ul li {
+			position: relative;
+			padding-left: 35px;
+			font-weight: 500;
+
+			i {
+				font-size: 18px;
+				color: $theme-primary-color;
+				position: absolute;
+				left: 0;
+				top: 2px;
+				text-align: center;
+			}
+		}
+
+		ul > li + li {
+			margin-top: 15px;
+		}
+	}
+
+	/*** service single tab ***/
+	.service-single-tab {
+		margin: 50px 0;
+
+		@include media-query(991px) {
+			margin: 40px 0;
+		}
+	}
+
+	.service-single-tab .nav {
+		overflow: hidden;
+		margin: 0;
+
+		li {
+			float: left;
+			padding-left: 0;
+		}
+
+		> li + li {
+			margin-top: 0;
+			margin-left: 3px;
+			@include media-query(767px) {
+				margin-left: 1px;
+			}
+		}
+
+		a {
+			background: $white;
+			font-size: 16px;
+			font-size: calc_rem_value(16);
+			font-weight: 500;
+			color: $heading-color;
+			padding: 13px 25px;
+			border: 1px solid transparentize($theme-primary-color, 0.8);
+
+			@include media-query(767px) {
+				font-size: 13px;
+				font-size: calc_rem_value(13);
+				padding: 8px 12px;
+				text-transform: none;
+			}
+
+			@include media-query(350px) {
+				padding: 8px;
+			}
+		}
+
+		.active a,
+		a:hover {
+			background: $theme-primary-color;
+			color: $white;
+		}
+	}
+
+	.tab-content {
+		padding: 35px 40px;
+		border: 1px solid transparentize($theme-primary-color, 0.8);
+		margin-top: -1px;
+
+
+		@include media-query(767px) {
+			padding: 25px 20px;
+		}
+
+		.tab-pane p {
+			margin-bottom: 20px;
+
+			@include media-query(767px) {
+				margin-bottom: 15px;
+			}
+		}
+
+		.tab-pane p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

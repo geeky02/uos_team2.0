@@ -1,0 +1,153 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name:     Netserv - IT Solutions and Services Company HTML Template
+Version:        1.0.0
+Author:         blue_design
+URL:            http://themeforest.net/user/blue_design
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1	Theme Reset Style
+#0.2	Global Elements
+#0.3	header
+#0.4	hero-slider
+#0.5	footer
+#0.6	cta-section
+#0.7	services-section
+#0.8	about-section
+#0.9	work-process
+#1.0	why-choose-us-section
+#1.1	our-skill-section
+#1.2	case-study-section
+#1.3	testimonials-section
+#1.4	cta-section-s2
+#1.5	blog-section
+#1.6	news-letter-section
+
+
+--------------------------------------------------------------
+	#home style 2
+--------------------------------------------------------------
+#2.1	features-section
+#2.2	about-section-s2
+#2.3	services-section-s2
+#2.4	case-study-section-s2
+#2.5	contact-section
+#2.6	pricing-section
+#2.7	testimonials-section
+
+
+--------------------------------------------------------------
+	#home style 3
+--------------------------------------------------------------
+#3.1	partners-section
+#3.2	feature-about-section
+#3.3	cta-s2-section
+#3.4	fun-fact-section
+
+
+--------------------------------------------------------------
+	#about
+--------------------------------------------------------------
+#4.1	team-section
+
+
+--------------------------------------------------------------
+	#contact
+--------------------------------------------------------------
+#5.1	contact-info-section
+
+
+--------------------------------------------------------------
+	blog page
+--------------------------------------------------------------
+#6.1	blog-pg-section
+
+
+--------------------------------------------------------------
+	#blog single page
+--------------------------------------------------------------
+#7.1	blog-single-section
+
+
+--------------------------------------------------------------
+	#portfolio single page
+--------------------------------------------------------------
+#8.1	portfolio-sigle-section
+
+
+--------------------------------------------------------------
+	#service single page
+--------------------------------------------------------------
+#9.1	service-single-section
+
+
+--------------------------------------------------------------
+	#shop page
+--------------------------------------------------------------
+#10.1	shop page
+
+
+--------------------------------------------------------------
+	#shop single page
+--------------------------------------------------------------
+#11.1	shop-single-section
+
+
+--------------------------------------------------------------
+  #404 page
+--------------------------------------------------------------
+#12.1  error-404-section
+
+
+
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/blog-sidebar";
+@import "components/pagination";
+@import "components/service-single-sidebar";
+@import "components/accordion";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style2";
+@import "page/home-style3";
+@import "page/about";
+@import "page/contact";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/project-single";
+@import "page/service-single";
+@import "page/shop";
+@import "page/shop-single";
+@import "page/error-404";
+
+

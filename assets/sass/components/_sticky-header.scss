@@ -1,0 +1,23 @@
+.sticky-header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: -200px;
+	z-index: 9999;
+	opacity: 0;
+	@include transition-time(0.7s);
+}
+
+.sticky-on {
+	opacity: 1;
+	top: 0;
+}
+
+.header-style-1 .sticky-header {
+	background: #323232;
+}
+
+.header-style-2 .sticky-header {
+	background: #fff;
+	box-shadow: 0 0 15px #cccccc;
+}

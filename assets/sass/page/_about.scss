@@ -1,0 +1,118 @@
+/*--------------------------------------------------------------
+	#about
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#4.1	team-section
+--------------------------------------------------------------*/
+.team-section {
+	padding-bottom: 60px;
+
+	@include media-query(991px) {
+		padding-bottom: 40px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 15px;
+	}
+
+	.team-grids {
+		margin: 0 -15px;
+
+		@include media-query(767px) {
+			margin: 0 -7.5px;
+		}
+
+		.grid {
+			width: calc(25% - 30px);
+			float: left;
+			margin: 0 15px 50px;
+			text-align: center;
+
+			@include media-query(991px) {
+				width: calc(50% - 30px);
+			}
+
+			@include media-query(767px) {
+				width: calc(50% - 15px);
+				margin: 0 7.5px 50px;
+			}
+
+			@include media-query(500px) {
+				width: calc(100% - 15px);
+				float: none;
+			}
+		}
+
+		ul {
+			list-style: none;
+			display: inline-block;
+		}
+
+		ul li {
+			float: left;
+		}
+
+		ul > li + li {
+			margin-left: 10px;
+		}
+
+		ul li a {
+			background-color: $theme-primary-color;
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			display: block;
+			font-size: 13px;
+			font-size: calc-rem-value(13);
+			color: $white;
+			border-radius: 50%;
+		}
+
+		ul li a:hover {
+			background-color: darken($theme-primary-color, 10%);;
+		}
+
+		.img-social {
+			position: relative;
+		}
+
+		.social {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			@include translatingX();
+			opacity: 0;
+			visibility: hidden;
+			@include transition-time(0.5s);
+		}
+
+		.grid:hover .social {
+			opacity: 1;
+			visibility: visible;
+			bottom: 20px;
+		}
+
+		.details {
+			padding-top: 25px;
+		}
+
+		h3 {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-weight: 500;
+			margin: 0 0 0.2em;
+
+			@include media-query(767px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+
+		h3 + span {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			font-weight: 600;
+		}
+	}
+}
