@@ -26,7 +26,36 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <style>
+        .project-filters {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .filter-btn {
+            background: none;
+            border: 2px solid #63c2ea;
+            color: #63c2ea;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+        
+        .filter-btn.active {
+            background: #63c2ea;
+            color: white;
+        }
+        
+        .grid {
+            transition: all 0.3s ease;
+        }
+        
+        .grid.hidden {
+            display: none;
+        }
+        </style>
 </head>
 
 <body>
@@ -152,11 +181,25 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="project-filters">
+                            <button class="filter-btn active" data-category="all">All Projects</button>
+                            <button class="filter-btn" data-category="blockchain">Blockchain Projects</button>
+                            <button class="filter-btn" data-category="mobile">Mobile Projects</button>
+                            <button class="filter-btn" data-category="AI">AI Projects</button>
+                            <button class="filter-btn" data-category="ux/ui">UX/UI Projects</button>
+                        </div>
+                    </div>
+                </div>
+                
+
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="content-area clearfix">
                             <div class="case-grids clearfix">
-                                <div class="grid">
+                                <div class="grid"  data-category="blockchain">
                                     <div class="inner">
                                         <div class="img-holder">
                                             <img src="assets/images/latest-projects/img-1.jpg" alt>
@@ -170,7 +213,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid">
+                                <div class="grid" data-category="mobile">
                                     <div class="inner">
                                         <div class="img-holder">
                                             <img src="assets/images/latest-projects/img-2.jpg" alt>
@@ -184,7 +227,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid">
+                                <div class="grid" data-category="blockchain">
                                     <div class="inner">
                                         <div class="img-holder">
                                             <img src="assets/images/latest-projects/img-3.jpg" alt>
@@ -198,7 +241,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid">
+                                <div class="grid" data-category="blockchain">
                                     <div class="inner">
                                         <div class="img-holder">
                                             <img src="assets/images/latest-projects/img-4.jpg" alt>
@@ -212,7 +255,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid">
+                                <div class="grid" data-category="blockchain">
                                     <div class="inner">
                                         <div class="img-holder">
                                             <img src="assets/images/latest-projects/img-5.jpg" alt>
@@ -226,7 +269,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid">
+                                <div class="grid" data-category="blockchain">
                                     <div class="inner">
                                         <div class="img-holder">
                                             <img src="assets/images/latest-projects/img-6.jpg" alt>
@@ -235,6 +278,90 @@
                                             <div class="info">
                                                 <h3>React.js, Typescript, Styled-Components</h3>
                                                 <a href="https://metasnail.mosesmawuru.pro/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid" data-category="mobile">
+                                    <div class="inner">
+                                        <div class="img-holder">
+                                            <img src="assets/images/latest-projects/img-7.jpg" alt>
+                                        </div>
+                                        <div class="details">
+                                            <div class="info">
+                                                <h3>React.js, Typescript, Styled-Components, Web3.js</h3>
+                                                <a href="https://www.mobile-hauswirtschaft.com/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid" data-category="AI">
+                                    <div class="inner">
+                                        <div class="img-holder">
+                                            <img src="assets/images/latest-projects/img-8.jpg" alt>
+                                        </div>
+                                        <div class="details">
+                                            <div class="info">
+                                                <h3>React.js, Typescript, Styled-Components</h3>
+                                                <a href="https://www.capeofgoodhope.com.sg/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid" data-category="AI">
+                                    <div class="inner">
+                                        <div class="img-holder">
+                                            <img src="assets/images/latest-projects/img-9.jpg" alt>
+                                        </div>
+                                        <div class="details">
+                                            <div class="info">
+                                                <h3>React.js, Typescript, Styled-Components, Web3.js</h3>
+                                                <a href="https://soapart.sg/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid" data-category="ux/ui">
+                                    <div class="inner">
+                                        <div class="img-holder">
+                                            <img src="assets/images/latest-projects/img-10.jpg" alt>
+                                        </div>
+                                        <div class="details">
+                                            <div class="info">
+                                                <h3>React.js, Typescript, Styled-Components, Web3.js</h3>
+                                                <a href="https://yuri-banno-9.com/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid" data-category="ux/ui">
+                                    <div class="inner">
+                                        <div class="img-holder">
+                                            <img src="assets/images/latest-projects/img-11.jpg" alt>
+                                        </div>
+                                        <div class="details">
+                                            <div class="info">
+                                                <h3>React.js, Typescript, Styled-Components</h3>
+                                                <a href="https://minerva-sleep.jp/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid" data-category="ux/ui">
+                                    <div class="inner">
+                                        <div class="img-holder">
+                                            <img src="assets/images/latest-projects/img-12.jpg" alt>
+                                        </div>
+                                        <div class="details">
+                                            <div class="info">
+                                                <h3>React.js, Typescript, Styled-Components</h3>
+                                                <a href="https://www.kao.co.jp/essential/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -268,8 +395,8 @@
                                 <p>Unios is a forward-thinking team of experts specializing in blockchain, AI, full-stack development, mobile solutions, and DevOps, dedicated to delivering innovative, scalable technology solutions.</p>
                                 <ul>
                                     <li><a href="#"><i class="ti-github"></i></a></li>
-                                    <li><a href="#"><i class="ti-email"></i></a></li>
-                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                    <li><a href="mailto:contact@unios.site"><i class="ti-email"></i></a></li>
+                                    <li><a href="#"><i class="ti-slack"></i></a></li>
                                     <li><a href="#"><i class="ti-mobile"></i></a></li>
                                 </ul>
                             </div>
@@ -293,12 +420,12 @@
                                     <h3>Services</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#">Web Development</a></li>
-                                    <li><a href="#">Mobile Development</a></li>
-                                    <li><a href="#">Blockchain Development</a></li>
-                                    <li><a href="#">Artificial Intelligence</a></li>
-                                    <li><a href="#">DevOps & Cloud Solutions</a></li>
-                                    <li><a href="#">UI/UX & Design</a></li>
+                                    <li>Web Development</li>
+                                    <li>Mobile Development</li>
+                                    <li>Blockchain Development</li>
+                                    <li>Artificial Intelligence</li>
+                                    <li>DevOps & Cloud Solutions</li>
+                                    <li>UI/UX & Design</li>
                                 </ul>
                             </div>
                         </div>
@@ -308,11 +435,10 @@
                                     <h3>Company</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#">About our company</a></li>
-                                    <li><a href="#">Client’s Testimonial</a></li>
-                                    <li><a href="#">Privacy policy</a></li>
-                                    <li><a href="#">Pricing and plans</a></li>
-                                    <li><a href="#">Cookies Policy</a></li>
+                                    <li><a href="about.html">About our Team</a></li>
+                                    <li><a href="projects-s2.html">Latest Projects</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="services.html">Services</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -346,5 +472,55 @@
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('.grid');
+        
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+        
+                    const category = button.getAttribute('data-category');
+        
+                    projects.forEach(project => {
+                        if (category === 'all' || project.getAttribute('data-category') === category) {
+                            project.classList.remove('hidden');
+                        } else {
+                            project.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+        </script>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projects = document.querySelectorAll('.grid');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            const category = button.getAttribute('data-category');
+
+            projects.forEach(project => {
+                if (category === 'all' || project.getAttribute('data-category') === category) {
+                    project.classList.remove('hidden');
+                } else {
+                    project.classList.add('hidden');
+                }
+            });
+        });
+    });
+});
+</script>
 </body>
 </html>
