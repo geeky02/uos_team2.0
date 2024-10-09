@@ -498,7 +498,8 @@
                         <div class="content-area">
                             <p>We’re here to collaborate and help you navigate the ever-evolving technological landscape. Whether you have a question, need consultation, or are ready to start a project, reach out to us and we’ll connect you with the right experts.</p>
                             <div class="contact-form">
-                                <form method="post" class="contact-validation-active" id="contact-form-main">
+                                <form class="contact-validation-active"  action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="52b3ec44-f23a-4243-9feb-af86cdb9de19">
                                     <div>
                                         <input type="text" class="form-control" name="name" id="name" placeholder="Name*">
                                     </div>
@@ -517,7 +518,7 @@
                                         </select>
                                     </div> -->
                                     <div class="fullwidth">
-                                        <textarea class="form-control" name="note"  id="note" placeholder="Case Description..."></textarea>
+                                        <textarea class="form-control" name="message"  id="note" placeholder="Case Description..."></textarea>
                                     </div>
                                     <div class="submit-area">
                                         <button type="submit" class="theme-btn submit-btn">Submit Now</button>
