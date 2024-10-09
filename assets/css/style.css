@@ -1920,7 +1920,7 @@ img {
 }
 
 .header-style-1 .navbar-brand img, .header-style-2 .navbar-brand img {
-  max-width: 120px;
+  max-width: 150px;
 }
 
 @media screen and (min-width: 992px) {
