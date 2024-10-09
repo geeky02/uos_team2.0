@@ -1920,7 +1920,7 @@ img {
 }
 
 .header-style-1 .navbar-brand img, .header-style-2 .navbar-brand img {
-  max-width: 60px;
+  max-width: 120px;
 }
 
 @media screen and (min-width: 992px) {
@@ -2755,7 +2755,7 @@ img {
 }
 
 .site-footer .about-widget .logo {
-  max-width: 80px;
+  max-width: 150px;
 }
 
 .site-footer .about-widget p {
