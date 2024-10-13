@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <meta name="author" content="irstheme">
 
     <title> Unios Team </title>
-    
+
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +21,7 @@
     <link href="assets/css/owl.transitions.css" rel="stylesheet">
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,11 +29,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-        .project-filters {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
         .filter-btn {
             background: none;
             border: 2px solid #63c2ea;
@@ -39,23 +36,53 @@
             padding: 10px 20px;
             margin: 0 10px;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
             border-radius: 5px;
         }
-        
+
+        /* Hover effect for buttons */
+        .filter-btn:hover {
+            background: #63c2ea;
+            color: white;
+            border-color: #63c2ea;
+            /* Change border color on hover */
+            box-shadow: 0 0 10px rgba(99, 194, 234, 0.6);
+            /* Add glow effect on hover */
+        }
+
+        /* Active effect for buttons (when clicked) */
+        .filter-btn:active {
+            background: #63c2ea;
+            color: white;
+            border-color: #63c2ea;
+            /* Darker border on active */
+            transform: scale(0.98);
+            /* Slight shrink to indicate a press */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Subtle shadow to add depth */
+        }
+
+        /* Active button stays active after being clicked */
         .filter-btn.active {
             background: #63c2ea;
             color: white;
+            border-color: #63c2ea;
+            box-shadow: none;
         }
-        
-        .grid {
+
+        /* Border style for cards */
+        .grid .inner {
+            border: 4px solid hsl(198, 100%, 92%);
+            /* Set the initial border */
+            padding: 1px;
+            border-radius: 10px;
             transition: all 0.3s ease;
         }
         
-        .grid.hidden {
-            display: none;
+        .project-filters {
+            margin-bottom: 50px;
         }
-        </style>
+    </style>
 </head>
 
 <body>
@@ -66,15 +93,15 @@
         <!-- start preloader -->
         <div class="preloader">
             <div class="sk-cube-grid">
-              <div class="sk-cube sk-cube1"></div>
-              <div class="sk-cube sk-cube2"></div>
-              <div class="sk-cube sk-cube3"></div>
-              <div class="sk-cube sk-cube4"></div>
-              <div class="sk-cube sk-cube5"></div>
-              <div class="sk-cube sk-cube6"></div>
-              <div class="sk-cube sk-cube7"></div>
-              <div class="sk-cube sk-cube8"></div>
-              <div class="sk-cube sk-cube9"></div>
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
             </div>
         </div>
         <!-- end preloader -->
@@ -123,7 +150,7 @@
                                 <li class="">
                                     <a href="projects.html">Project</a>
                                 </li>
-                                
+
                                 <!-- <li class="menu-item-has-children">
                                     <a href="#">Blog</a>
                                     <ul class="sub-menu">
@@ -144,7 +171,7 @@
                             </ul>
                         </div><!-- end of nav-collapse -->
 
-                        
+
                     </div>
                 </div><!-- end of container -->
             </nav>
@@ -161,7 +188,7 @@
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
-        </section>        
+        </section>
         <!-- end page-title -->
 
 
@@ -172,12 +199,14 @@
                     <div class="col col-lg-5 col-md-5">
                         <div class="section-title-s3">
                             <span>PROJECTS</span>
-                            <h2>Check our latest project,doen for client!</h2>
+                            <h2>Check our latest project,done for client!</h2>
                         </div>
                     </div>
                     <div class="col col-lg-6 col-lg-offset-1 col-md-7">
                         <div class="text">
-                            <p>Check out our latest project, successfully delivered for a valued client! This solution demonstrates our expertise in cutting-edge technologies, tailored to meet their specific needs and drive real results.</p>
+                            <p>Check out our latest project, successfully delivered for a valued client! This solution
+                                demonstrates our expertise in cutting-edge technologies, tailored to meet their specific
+                                needs and drive real results.</p>
                         </div>
                     </div>
                 </div>
@@ -193,13 +222,13 @@
                         </div>
                     </div>
                 </div>
-                
+
 
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="content-area clearfix">
                             <div class="case-grids clearfix">
-                                <div class="grid"  data-category="blockchain">
+                                <div class="grid" data-category="blockchain">
                                     <div class="inner">
                                         <div class="img-holder">
                                             <img src="assets/images/latest-projects/img-1.jpg" alt>
@@ -207,7 +236,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>React.js, Styled-Components, core-js</h3>
-                                                <a href="https://eggcellent.mosesmawuru.pro/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://eggcellent.mosesmawuru.pro/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -221,7 +252,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>React.js, Typescript, Styled-Components</h3>
-                                                <a href="https://hodalica.mosesmawuru.pro/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://hodalica.mosesmawuru.pro/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -235,7 +268,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>Angular, Zone.js, Typescript, Web3.js, Firebase</h3>
-                                                <a href="https://rebase.gg/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://rebase.gg/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -249,7 +284,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>React.js, Styled-Components, Web3.js, Swiper</h3>
-                                                <a href="https://gamerhub.mosesmawuru.pro/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://gamerhub.mosesmawuru.pro/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -262,8 +299,11 @@
                                         </div>
                                         <div class="details">
                                             <div class="info">
-                                                <h3>React.js, Next.js, ApexChart.js, Goober, AOS, Headless UI, Tailwind CSS</h3>
-                                                <a href="https://parasol.finance/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <h3>React.js, Next.js, ApexChart.js, Goober, AOS, Headless UI, Tailwind
+                                                    CSS</h3>
+                                                <a href="https://parasol.finance/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -277,7 +317,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>WordPress, React, MySQL, PHP, Styled-Components</h3>
-                                                <a href="https://metasnail.mosesmawuru.pro/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://metasnail.mosesmawuru.pro/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -291,7 +333,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>Wix, React.js, Lodash, Google Cloud CDN</h3>
-                                                <a href="https://www.mobile-hauswirtschaft.com/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://www.mobile-hauswirtschaft.com/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -305,7 +349,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>Squarespace, Squarespace Commerce</h3>
-                                                <a href="https://www.capeofgoodhope.com.sg/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://www.capeofgoodhope.com.sg/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -319,7 +365,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>WordPress, PHP, MySQL, Swiper, JQuery, Yoast SEO</h3>
-                                                <a href="https://soapart.sg/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://soapart.sg/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -333,7 +381,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>WordPress, PHP, MySQL, Slick, JQuery</h3>
-                                                <a href="https://yuri-banno-9.com/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://yuri-banno-9.com/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -347,7 +397,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>Shopify, jsDelivr, GSAP, core-js, Booerang</h3>
-                                                <a href="https://minerva-sleep.jp/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://minerva-sleep.jp/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -361,7 +413,9 @@
                                         <div class="details">
                                             <div class="info">
                                                 <h3>GSAP, Backbone.js, Underscore.js, cdnjs, jsDelivr, Cloudflare</h3>
-                                                <a href="https://www.kao.co.jp/essential/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                                <a href="https://www.kao.co.jp/essential/"
+                                                    style="padding-right: 20px; font-size:x-large;"><i
+                                                        class="ti-link"></i></a>
                                                 <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
                                             </div>
                                         </div>
@@ -377,7 +431,7 @@
 
 
         <!-- start news-letter-section -->
-        
+
         <!-- end news-letter-section -->
 
 
@@ -392,12 +446,21 @@
                                 <div class="logo widget-title">
                                     <img src="assets/images/footer-logo.png" alt>
                                 </div>
-                                <p>Unios is a forward-thinking team of experts specializing in blockchain, AI, full-stack development, mobile solutions, and DevOps, dedicated to delivering innovative, scalable technology solutions.</p>
+                                <p>Unios is a forward-thinking team of experts specializing in blockchain, AI,
+                                    full-stack development, mobile solutions, and DevOps, dedicated to delivering
+                                    innovative, scalable technology solutions.</p>
                                 <ul>
-                                    <li><a href="#"><i class="ti-github"></i></a></li>
-                                    <li><a href="mailto:contact@unios.site"><i class="ti-email"></i></a></li>
-                                    <li><a href="#"><i class="ti-slack"></i></a></li>
-                                    <li><a href="#"><i class="ti-mobile"></i></a></li>
+                                    <li><a href="#"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                                        <dotlottie-player src="https://lottie.host/a259662c-69de-4ebf-b3f9-a046f256b489/2aq5f6SNKV.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></dotlottie-player></a></li>
+                                    <li><a href="mailto:contact@unios.site"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+                                        <dotlottie-player src="https://lottie.host/55afbd97-a113-4746-9f92-88c5d537e542/FUvgRu9WpK.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></dotlottie-player></li>
+                                    <li><a href="#"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+                                        <dotlottie-player src="https://lottie.host/0810ba2a-10a7-4789-9d97-16635e0546c3/wJSj7WBX0x.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></dotlottie-player></a></li>
+                                    <li><a href="#"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+                                        <dotlottie-player src="https://lottie.host/02cc1a69-d88b-4d83-a011-43ba3224dbf7/r6rmcoLQND.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></dotlottie-player></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -473,19 +536,19 @@
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const projects = document.querySelectorAll('.grid');
-        
+
             filterButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     // Remove active class from all buttons
                     filterButtons.forEach(btn => btn.classList.remove('active'));
                     // Add active class to clicked button
                     button.classList.add('active');
-        
+
                     const category = button.getAttribute('data-category');
-        
+
                     projects.forEach(project => {
                         if (category === 'all' || project.getAttribute('data-category') === category) {
                             project.classList.remove('hidden');
@@ -496,31 +559,32 @@
                 });
             });
         });
-        </script>
-        <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projects = document.querySelectorAll('.grid');
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('.grid');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
 
-            const category = button.getAttribute('data-category');
+                    const category = button.getAttribute('data-category');
 
-            projects.forEach(project => {
-                if (category === 'all' || project.getAttribute('data-category') === category) {
-                    project.classList.remove('hidden');
-                } else {
-                    project.classList.add('hidden');
-                }
+                    projects.forEach(project => {
+                        if (category === 'all' || project.getAttribute('data-category') === category) {
+                            project.classList.remove('hidden');
+                        } else {
+                            project.classList.add('hidden');
+                        }
+                    });
+                });
             });
         });
-    });
-});
-</script>
+    </script>
 </body>
+
 </html>
