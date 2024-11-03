@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <!-- Background circle -->
+  <circle cx="150" cy="50" r="45" fill="#0066cc"/>
+  
+  <!-- UOS Text -->
+  <text x="150" y="65" 
+        font-family="Arial, sans-serif" 
+        font-size="40" 
+        font-weight="bold" 
+        fill="white" 
+        text-anchor="middle">
+    UOS
+  </text>
+  
+  <!-- Decorative arc -->
+  <path d="M110 30 A45 45 0 0 1 190 30" 
+        stroke="white" 
+        stroke-width="3" 
+        fill="none"/>
+</svg>
