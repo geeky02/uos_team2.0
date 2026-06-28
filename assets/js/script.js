@@ -152,11 +152,23 @@
 
     var swiper = new Swiper(".swiper-container", swiperOptions);
 
-    // DATA BACKGROUND IMAGE
+    // DATA BACKGROUND IMAGE - Lazy load slider images
     var sliderBgSetting = $(".slide-bg-image");
-    sliderBgSetting.each(function(indx){
+    // Load only first slide immediately
+    sliderBgSetting.first().each(function(){
         if ($(this).attr("data-background")){
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
+        }
+    });
+    // Lazy load remaining slides
+    sliderBgSetting.slice(1).each(function(indx){
+        var $this = $(this);
+        if ($this.attr("data-background")){
+            var img = new Image();
+            img.src = $this.data("background");
+            img.onload = function() {
+                $this.css("background-image", "url(" + $this.data("background") + ")");
+            };
         }
     });
 
