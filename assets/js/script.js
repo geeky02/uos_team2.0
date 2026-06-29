@@ -154,13 +154,7 @@
 
     // DATA BACKGROUND IMAGE - Lazy load slider images
     var sliderBgSetting = $(".slide-bg-image");
-    // Load only first slide immediately
-    sliderBgSetting.first().each(function(){
-        if ($(this).attr("data-background")){
-            $(this).css("background-image", "url(" + $(this).data("background") + ")");
-        }
-    });
-    // Lazy load remaining slides
+    // Skip first slide (loaded via inline CSS for LCP optimization)
     sliderBgSetting.slice(1).each(function(indx){
         var $this = $(this);
         if ($this.attr("data-background")){

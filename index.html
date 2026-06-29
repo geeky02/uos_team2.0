@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +15,16 @@
 
     <title> Unios Team </title>
 
-    <!-- Preload first slider image for LCP -->
-    <link rel="preload" as="image" href="assets/images/slider/slide-2.webp" fetchpriority="high">
+    <!-- Preconnect to Google Fonts for faster LCP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload first slider image for LCP - responsive -->
+    <link rel="preload" as="image" href="assets/images/slider/slide-2-mobile.webp" fetchpriority="high"
+        media="(max-width: 767px)">
+    <link rel="preload" as="image" href="assets/images/slider/slide-2.webp" fetchpriority="high"
+        media="(min-width: 768px)">
+    <link rel="preload" href="assets/images/slider/slide-1.webp" as="image" fetchpriority="high">
 
     <link href="assets/css/themify-icons.css" rel="stylesheet">
 
@@ -79,23 +86,23 @@
 
             <div class="sk-cube-grid">
 
-              <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube1"></div>
 
-              <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube2"></div>
 
-              <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube3"></div>
 
-              <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube4"></div>
 
-              <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube5"></div>
 
-              <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube6"></div>
 
-              <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube7"></div>
 
-              <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube8"></div>
 
-              <div class="sk-cube sk-cube9"></div>
+                <div class="sk-cube sk-cube9"></div>
 
             </div>
 
@@ -235,7 +242,7 @@
 
 
 
-                        
+
 
                     </div>
 
@@ -261,7 +268,10 @@
 
                     <div class="swiper-slide">
 
-                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-2.webp">
+                        <div class="slide-inner slide-bg-image"
+                            style="background-image: url('assets/images/slider/slide-2-mobile.webp');"
+                            data-background-desktop="assets/images/slider/slide-2.webp"
+                            data-background-mobile="assets/images/slider/slide-2-mobile.webp">
 
                             <div class="container">
 
@@ -273,7 +283,9 @@
 
                                 <div data-swiper-parallax="400" class="slide-text">
 
-                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain solutions, AI-driven innovations, and exceptional UI/UX design, delivering cutting-edge digital experiences across industries. </p>
+                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain
+                                        solutions, AI-driven innovations, and exceptional UI/UX design, delivering
+                                        cutting-edge digital experiences across industries. </p>
 
                                 </div>
 
@@ -281,13 +293,13 @@
 
                                 <div data-swiper-parallax="500" class="slide-btns">
 
-                                    <a href="#" class="theme-btn">Discover More</a> 
+                                    <a href="#" class="theme-btn">Discover More</a>
 
                                 </div>
 
                             </div>
 
-                        </div> <!-- end slide-inner --> 
+                        </div> <!-- end slide-inner -->
 
                     </div> <!-- end swiper-slide -->
 
@@ -307,7 +319,9 @@
 
                                 <div data-swiper-parallax="400" class="slide-text">
 
-                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain solutions, AI-driven innovations, and exceptional UI/UX design, delivering cutting-edge digital experiences across industries. </p>
+                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain
+                                        solutions, AI-driven innovations, and exceptional UI/UX design, delivering
+                                        cutting-edge digital experiences across industries. </p>
 
                                 </div>
 
@@ -315,13 +329,13 @@
 
                                 <div data-swiper-parallax="500" class="slide-btns">
 
-                                    <a href="#" class="theme-btn">Discover More</a> 
+                                    <a href="#" class="theme-btn">Discover More</a>
 
                                 </div>
 
                             </div>
 
-                        </div> <!-- end slide-inner --> 
+                        </div> <!-- end slide-inner -->
 
                     </div> <!-- end swiper-slide -->
 
@@ -341,7 +355,9 @@
 
                                 <div data-swiper-parallax="400" class="slide-text">
 
-                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain solutions, AI-driven innovations, and exceptional UI/UX design, delivering cutting-edge digital experiences across industries. </p>
+                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain
+                                        solutions, AI-driven innovations, and exceptional UI/UX design, delivering
+                                        cutting-edge digital experiences across industries. </p>
 
                                 </div>
 
@@ -349,15 +365,15 @@
 
                                 <div data-swiper-parallax="500" class="slide-btns">
 
-                                    <a href="#" class="theme-btn">Discover More</a> 
+                                    <a href="#" class="theme-btn">Discover More</a>
 
                                 </div>
 
                             </div>
 
-                        </div> <!-- end slide-inner --> 
+                        </div> <!-- end slide-inner -->
 
-                    </div><!-- end swiper-slide --> 
+                    </div><!-- end swiper-slide -->
 
                     <div class="swiper-slide">
 
@@ -373,7 +389,9 @@
 
                                 <div data-swiper-parallax="400" class="slide-text">
 
-                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain solutions, AI-driven innovations, and exceptional UI/UX design, delivering cutting-edge digital experiences across industries. </p>
+                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain
+                                        solutions, AI-driven innovations, and exceptional UI/UX design, delivering
+                                        cutting-edge digital experiences across industries. </p>
 
                                 </div>
 
@@ -381,15 +399,15 @@
 
                                 <div data-swiper-parallax="500" class="slide-btns">
 
-                                    <a href="#" class="theme-btn">Discover More</a> 
+                                    <a href="#" class="theme-btn">Discover More</a>
 
                                 </div>
 
                             </div>
 
-                        </div> <!-- end slide-inner --> 
+                        </div> <!-- end slide-inner -->
 
-                    </div><!-- end swiper-slide --> 
+                    </div><!-- end swiper-slide -->
 
                     <div class="swiper-slide">
 
@@ -405,7 +423,9 @@
 
                                 <div data-swiper-parallax="400" class="slide-text">
 
-                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain solutions, AI-driven innovations, and exceptional UI/UX design, delivering cutting-edge digital experiences across industries. </p>
+                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain
+                                        solutions, AI-driven innovations, and exceptional UI/UX design, delivering
+                                        cutting-edge digital experiences across industries. </p>
 
                                 </div>
 
@@ -413,15 +433,15 @@
 
                                 <div data-swiper-parallax="500" class="slide-btns">
 
-                                    <a href="#" class="theme-btn">Discover More</a> 
+                                    <a href="#" class="theme-btn">Discover More</a>
 
                                 </div>
 
                             </div>
 
-                        </div> <!-- end slide-inner --> 
+                        </div> <!-- end slide-inner -->
 
-                    </div><!-- end swiper-slide --> 
+                    </div><!-- end swiper-slide -->
 
                     <div class="swiper-slide">
 
@@ -437,7 +457,9 @@
 
                                 <div data-swiper-parallax="400" class="slide-text">
 
-                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain solutions, AI-driven innovations, and exceptional UI/UX design, delivering cutting-edge digital experiences across industries. </p>
+                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain
+                                        solutions, AI-driven innovations, and exceptional UI/UX design, delivering
+                                        cutting-edge digital experiences across industries. </p>
 
                                 </div>
 
@@ -445,15 +467,15 @@
 
                                 <div data-swiper-parallax="500" class="slide-btns">
 
-                                    <a href="#" class="theme-btn">Discover More</a> 
+                                    <a href="#" class="theme-btn">Discover More</a>
 
                                 </div>
 
                             </div>
 
-                        </div> <!-- end slide-inner --> 
+                        </div> <!-- end slide-inner -->
 
-                    </div><!-- end swiper-slide --> 
+                    </div><!-- end swiper-slide -->
 
                     <div class="swiper-slide">
 
@@ -469,7 +491,9 @@
 
                                 <div data-swiper-parallax="400" class="slide-text">
 
-                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain solutions, AI-driven innovations, and exceptional UI/UX design, delivering cutting-edge digital experiences across industries. </p>
+                                    <p>Unios is a versatile team specializing in web and mobile development, blockchain
+                                        solutions, AI-driven innovations, and exceptional UI/UX design, delivering
+                                        cutting-edge digital experiences across industries. </p>
 
                                 </div>
 
@@ -477,15 +501,15 @@
 
                                 <div data-swiper-parallax="500" class="slide-btns">
 
-                                    <a href="#" class="theme-btn">Discover More</a> 
+                                    <a href="#" class="theme-btn">Discover More</a>
 
                                 </div>
 
                             </div>
 
-                        </div> <!-- end slide-inner --> 
+                        </div> <!-- end slide-inner -->
 
-                    </div><!-- end swiper-slide --> 
+                    </div><!-- end swiper-slide -->
 
                 </div>
 
@@ -607,7 +631,11 @@
 
                         <div class="details">
 
-                            <p>We are a team of forward-thinking technology professionals, specializing in blockchain, artificial intelligence, full-stack web and mobile development, UI/UX design, and DevOps. Our collective expertise allows us to transform complex challenges into scalable, innovative solutions that drive digital transformation for businesses of all sizes.</p>
+                            <p>We are a team of forward-thinking technology professionals, specializing in blockchain,
+                                artificial intelligence, full-stack web and mobile development, UI/UX design, and
+                                DevOps. Our collective expertise allows us to transform complex challenges into
+                                scalable, innovative solutions that drive digital transformation for businesses of all
+                                sizes.</p>
 
                             <ul>
 
@@ -621,7 +649,7 @@
 
                             </ul>
 
-                            
+
 
                         </div>
 
@@ -689,7 +717,8 @@
 
                                 <h4><a href="#">Web Development</a></h4>
 
-                                <p style="margin-bottom:10%;">We design and build dynamic, responsive web applications with robust frontends, secure backends, and scalable cloud solutions.</p>
+                                <p style="margin-bottom:10%;">We design and build dynamic, responsive web applications
+                                    with robust frontends, secure backends, and scalable cloud solutions.</p>
 
                             </div>
 
@@ -703,7 +732,8 @@
 
                                 <h4><a href="#">Mobile Development</a></h4>
 
-                                <p>Our team creates cross-platform and native mobile apps with user-centric design and performance-driven functionality for both iOS and Android.</p>
+                                <p>Our team creates cross-platform and native mobile apps with user-centric design and
+                                    performance-driven functionality for both iOS and Android.</p>
 
                             </div>
 
@@ -717,7 +747,8 @@
 
                                 <h4><a href="#">Blockchain Development</a></h4>
 
-                                <p>We deliver secure blockchain solutions, including smart contracts, decentralized applications (DApps), and tokenization strategies for various industries.</p>
+                                <p>We deliver secure blockchain solutions, including smart contracts, decentralized
+                                    applications (DApps), and tokenization strategies for various industries.</p>
 
                             </div>
 
@@ -731,7 +762,8 @@
 
                                 <h4><a href="#">Artificial Intelligence & Machine Learning</a></h4>
 
-                                <p>We harness AI and machine learning to build predictive models, automate processes, and enhance decision-making with cutting-edge algorithms.</p>
+                                <p>We harness AI and machine learning to build predictive models, automate processes,
+                                    and enhance decision-making with cutting-edge algorithms.</p>
 
                             </div>
 
@@ -745,7 +777,8 @@
 
                                 <h4><a href="#">DevOps & Cloud Solutions</a></h4>
 
-                                <p>We streamline software development through CI/CD automation, cloud infrastructure management, and continuous monitoring for high-performance applications.</p>
+                                <p>We streamline software development through CI/CD automation, cloud infrastructure
+                                    management, and continuous monitoring for high-performance applications.</p>
 
                             </div>
 
@@ -759,7 +792,8 @@
 
                                 <h4><a href="#">UI/UX & Design</a></h4>
 
-                                <p>We create intuitive, user-centered interfaces and compelling designs that enhance user experiences and drive engagement across web and mobile platforms.</p>
+                                <p>We create intuitive, user-centered interfaces and compelling designs that enhance
+                                    user experiences and drive engagement across web and mobile platforms.</p>
 
                             </div>
 
@@ -775,7 +809,8 @@
 
                         <div class="all-service">
 
-                            <p>If you wnat to know more details about services Please check <a href="#">All Services</a></p>
+                            <p>If you wnat to know more details about services Please check <a href="#">All Services</a>
+                            </p>
 
                         </div>
 
@@ -849,7 +884,9 @@
 
                         <div class="text">
 
-                            <p>Check out our latest project, successfully delivered for a valued client! This solution demonstrates our expertise in cutting-edge technologies, tailored to meet their specific needs and drive real results.</p>
+                            <p>Check out our latest project, successfully delivered for a valued client! This solution
+                                demonstrates our expertise in cutting-edge technologies, tailored to meet their specific
+                                needs and drive real results.</p>
 
                         </div>
 
@@ -881,9 +918,11 @@
 
                                     <h3>React.js, Styled-Components, Web3.js</h3>
 
-                                    <a href="https://eggcellent.mosesmawuru.pro/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                    <a href="https://eggcellent.mosesmawuru.pro/"
+                                        style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
 
-                                    <a href="https://github.com/unios-team/effcellent-nft" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                    <a href="https://github.com/unios-team/effcellent-nft" style="font-size:x-large;"><i
+                                            class="ti-github"></i></a>
 
                                 </div>
 
@@ -909,9 +948,11 @@
 
                                     <h3>React.js, Styled-Components, core-js</h3>
 
-                                    <a href="https://hodalica.mosesmawuru.pro/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                    <a href="https://hodalica.mosesmawuru.pro/"
+                                        style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
 
-                                    <a href="https://github.com/unios-team/hodalica" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                    <a href="https://github.com/unios-team/hodalica" style="font-size:x-large;"><i
+                                            class="ti-github"></i></a>
 
                                 </div>
 
@@ -937,9 +978,11 @@
 
                                     <h3>Angular, Zone.js, Typescript, Web3.js, Firebase</h3>
 
-                                    <a href="https://rebase.gg/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                    <a href="https://rebase.gg/" style="padding-right: 20px; font-size:x-large;"><i
+                                            class="ti-link"></i></a>
 
-                                    <a href="https://github.com/unios-team/rebase" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                    <a href="https://github.com/unios-team/rebase" style="font-size:x-large;"><i
+                                            class="ti-github"></i></a>
 
                                 </div>
 
@@ -965,9 +1008,11 @@
 
                                     <h3>React.js, Styled-Components, Web3.js, Swiper</h3>
 
-                                    <a href="https://gamerhub.mosesmawuru.pro/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                    <a href="https://gamerhub.mosesmawuru.pro/"
+                                        style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
 
-                                    <a href="https://github.com/unios-team/gamehub-hackathon" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                    <a href="https://github.com/unios-team/gamehub-hackathon"
+                                        style="font-size:x-large;"><i class="ti-github"></i></a>
 
                                 </div>
 
@@ -993,9 +1038,11 @@
 
                                     <h3>React.js, Next.js, ApexChart.js, Goober, AOS, Headless UI, Tailwind CSS</h3>
 
-                                    <a href="https://parasol.finance/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                    <a href="https://parasol.finance/"
+                                        style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
 
-                                    <a href="https://github.com/unios-team/parasol" style="font-size:x-large;"><i class="ti-github"></i></a>
+                                    <a href="https://github.com/unios-team/parasol" style="font-size:x-large;"><i
+                                            class="ti-github"></i></a>
 
                                 </div>
 
@@ -1021,7 +1068,8 @@
 
                                     <h3>WordPress, React, MySQL, PHP, Styled-Components</h3>
 
-                                    <a href="https://metasnail.mosesmawuru.pro/" style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
+                                    <a href="https://metasnail.mosesmawuru.pro/"
+                                        style="padding-right: 20px; font-size:x-large;"><i class="ti-link"></i></a>
 
                                     <a href="#" style="font-size:x-large;"><i class="ti-github"></i></a>
 
@@ -1073,29 +1121,35 @@
 
                         <div class="content-area">
 
-                            <p>We’re here to collaborate and help you navigate the ever-evolving technological landscape. Whether you have a question, need consultation, or are ready to start a project, reach out to us and we’ll connect you with the right experts.</p>
+                            <p>We’re here to collaborate and help you navigate the ever-evolving technological
+                                landscape. Whether you have a question, need consultation, or are ready to start a
+                                project, reach out to us and we’ll connect you with the right experts.</p>
 
                             <div class="contact-form">
 
-                                <form class="contact-validation-active"  action="https://api.web3forms.com/submit" method="POST">
+                                <form class="contact-validation-active" action="https://api.web3forms.com/submit"
+                                    method="POST">
 
                                     <input type="hidden" name="access_key" value="52b3ec44-f23a-4243-9feb-af86cdb9de19">
 
                                     <div>
 
-                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name*">
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            placeholder="Name*">
 
                                     </div>
 
                                     <div>
 
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email*">
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="Email*">
 
                                     </div>
 
                                     <div>
 
-                                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
+                                        <input type="text" class="form-control" name="phone" id="phone"
+                                            placeholder="Phone*">
 
                                     </div>
 
@@ -1117,7 +1171,8 @@
 
                                     <div class="fullwidth">
 
-                                        <textarea class="form-control" name="message"  id="note" placeholder="Case Description..."></textarea>
+                                        <textarea class="form-control" name="message" id="note"
+                                            placeholder="Case Description..."></textarea>
 
                                     </div>
 
@@ -1137,13 +1192,14 @@
 
                                         <div id="success">Thank you</div>
 
-                                        <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                        <div id="error"> Error occurred while sending email. Please try again later.
+                                        </div>
 
                                     </div>
 
                                 </form>
 
-                            </div>                            
+                            </div>
 
                         </div>
 
@@ -1163,7 +1219,7 @@
 
         <!-- start pricing-section -->
 
-       
+
 
         <!-- end pricing-section -->
 
@@ -1201,7 +1257,11 @@
 
                                 <div class="client-quote">
 
-                                    <p>Working with Unios was a game-changer for our business. Their attention to detail and innovative approach helped us streamline our operations and increase our efficiency. The team was highly responsive and went above and beyond to meet our expectations. I highly recommend Unios for any project requiring top-tier technical expertise</p>
+                                    <p>Working with Unios was a game-changer for our business. Their attention to detail
+                                        and innovative approach helped us streamline our operations and increase our
+                                        efficiency. The team was highly responsive and went above and beyond to meet our
+                                        expectations. I highly recommend Unios for any project requiring top-tier
+                                        technical expertise</p>
 
                                 </div>
 
@@ -1225,7 +1285,11 @@
 
                                 <div class="client-quote">
 
-                                    <p>Unios exceeded our expectations in every way. From the initial consultation to the final delivery, their team demonstrated exceptional professionalism and dedication. They took the time to understand our needs and developed a custom solution that significantly improved our workflow. We're already seeing the positive impact their work has had on our business.</p>
+                                    <p>Unios exceeded our expectations in every way. From the initial consultation to
+                                        the final delivery, their team demonstrated exceptional professionalism and
+                                        dedication. They took the time to understand our needs and developed a custom
+                                        solution that significantly improved our workflow. We're already seeing the
+                                        positive impact their work has had on our business.</p>
 
                                 </div>
 
@@ -1249,7 +1313,11 @@
 
                                 <div class="client-quote">
 
-                                    <p>Working with uos team was a fantastic experience from start to finish. Their expertise in web scraping and data extraction was evident from the very first meeting. They understood our requirements quickly and even suggested additional insights that added value to our project. The quality of the data they provided was exceptional—accurate, well-organized, and delivered exactly as promised.</p>
+                                    <p>Working with uos team was a fantastic experience from start to finish. Their
+                                        expertise in web scraping and data extraction was evident from the very first
+                                        meeting. They understood our requirements quickly and even suggested additional
+                                        insights that added value to our project. The quality of the data they provided
+                                        was exceptional—accurate, well-organized, and delivered exactly as promised.</p>
 
                                 </div>
 
@@ -1273,7 +1341,10 @@
 
                                 <div class="client-quote">
 
-                                    <p>Communication was seamless; they were always responsive to questions and provided regular updates on the project status. They went above and beyond to accommodate last-minute changes without any hassle, which really showed their commitment to client satisfaction.</p>
+                                    <p>Communication was seamless; they were always responsive to questions and provided
+                                        regular updates on the project status. They went above and beyond to accommodate
+                                        last-minute changes without any hassle, which really showed their commitment to
+                                        client satisfaction.</p>
 
                                 </div>
 
@@ -1297,7 +1368,10 @@
 
                                 <div class="client-quote">
 
-                                    <p>Overall, the service was worth every penny. We not only received high-quality results but also gained new insights into our data. We would highly recommend uos team to anyone looking for a reliable, skilled partner for their data needs!</p>
+                                    <p>Overall, the service was worth every penny. We not only received high-quality
+                                        results but also gained new insights into our data. We would highly recommend
+                                        uos team to anyone looking for a reliable, skilled partner for their data needs!
+                                    </p>
 
                                 </div>
 
@@ -1461,7 +1535,7 @@
 
         <!-- start news-letter-section -->
 
-        
+
 
         <!-- end news-letter-section -->
 
@@ -1491,17 +1565,25 @@
 
                                 </div>
 
-                                <p>Unios is a forward-thinking team of experts specializing in blockchain, AI, full-stack development, mobile solutions, and DevOps, dedicated to delivering innovative, scalable technology solutions.</p>
+                                <p>Unios is a forward-thinking team of experts specializing in blockchain, AI,
+                                    full-stack development, mobile solutions, and DevOps, dedicated to delivering
+                                    innovative, scalable technology solutions.</p>
 
                                 <ul>
 
                                     <li><a href="https://github.com/unios-team">
 
-                                        <dotlottie-player src="https://lottie.host/a259662c-69de-4ebf-b3f9-a046f256b489/2aq5f6SNKV.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></dotlottie-player></a></li>
+                                            <dotlottie-player
+                                                src="https://lottie.host/a259662c-69de-4ebf-b3f9-a046f256b489/2aq5f6SNKV.json"
+                                                background="transparent" speed="1" style="width: 60px; height: 60px;"
+                                                loop autoplay></dotlottie-player></a></li>
 
                                     <li><a href="mailto:contact@unios.site">
 
-                                        <dotlottie-player src="https://lottie.host/55afbd97-a113-4746-9f92-88c5d537e542/FUvgRu9WpK.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></dotlottie-player></li>
+                                            <dotlottie-player
+                                                src="https://lottie.host/55afbd97-a113-4746-9f92-88c5d537e542/FUvgRu9WpK.json"
+                                                background="transparent" speed="1" style="width: 60px; height: 60px;"
+                                                loop autoplay></dotlottie-player></li>
 
                                     <!-- <li><a href="#">
 
@@ -1665,9 +1747,9 @@
 
     <!-- Dotlottie player for footer animations -->
 
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module" defer></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"
+        defer></script>
 
 </body>
 
 </html>
-

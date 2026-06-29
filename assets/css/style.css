@@ -8074,4 +8074,9 @@ img {
   margin-bottom: 1.8em;
 }
 
+.hero-section-class {
+  background-color: #f4f7f6; /* A matching placeholder color */
+  content-visibility: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
