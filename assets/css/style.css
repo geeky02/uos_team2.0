@@ -966,6 +966,7 @@ img {
 
 .blog-sidebar .about-widget .img-holder {
   margin-bottom: 25px;
+			width: 100px !important;
 }
 
 .blog-sidebar .about-widget .img-holder img {
@@ -4615,7 +4616,23 @@ img {
   }
 }
 
-.case-study-section-s2 .img-holder img,
+.case-study-section-s2 .img-holder {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 aspect ratio */
+  overflow: hidden;
+}
+
+.case-study-section-s2 .img-holder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 .case-study-section-s2 .grid,
 .case-study-section-s2 .inner .details {
   border-radius: 5px;
