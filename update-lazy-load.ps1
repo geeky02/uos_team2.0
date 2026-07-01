@@ -17,7 +17,7 @@ Get-ChildItem -Filter "*.html" -File | ForEach-Object {
         
         if ($content -notmatch 'lazy-load\.js') {
             # Replace the script.js line with script.js + lazy-load.js
-            $newContent = $content -replace [regex]::Escape($searchPattern), ($searchPattern + "`n`n" + $lazyLoadScriptBlock)
+            $newContent = $content -replace [regex]::Escape($searchPattern), ($searchPattern + "" + $lazyLoadScriptBlock)
             
             [System.IO.File]::WriteAllText($filePath, $newContent, [System.Text.Encoding]::UTF8)
             Write-Host "✓ Updated: $fileName"
@@ -29,4 +29,4 @@ Get-ChildItem -Filter "*.html" -File | ForEach-Object {
     }
 }
 
-Write-Host "`nDone!"
+Write-Host "Done!"
